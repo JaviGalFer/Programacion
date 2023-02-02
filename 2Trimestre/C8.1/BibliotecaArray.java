@@ -317,6 +317,6 @@ public class BibliotecaArray {
     System.out.print ("El array rotando " +nIzquierda+ " posiciones a la izquierda es el siguiente: ");
     muestraArrayInt(aux);
     
-    
+  s.close();
  }
 }

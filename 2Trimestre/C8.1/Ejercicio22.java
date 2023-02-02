@@ -188,5 +188,6 @@ public class Ejercicio22 {
     
     System.out.println (base + "^" + exponente + "=" + resultado );
     /////////////////////////////////////////////////
+    s.close();
  }
 }
