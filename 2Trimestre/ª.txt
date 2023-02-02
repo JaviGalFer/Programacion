@@ -1,0 +1,15 @@
+1º Mostrar los elementos del array
+2º Preguntar una posición y mostrar el elemento
+3º Mostrar la suma de los elemntos de las posiciones pares.
+
+math.pow(a, b) a^b
+
+math.sqrt(a) --Raiz cuadrada--
+
+
+ejercicios 3,4,5
+
+11, 12, 13 bidimensionales
+
+
+unadimension 18,18,21
