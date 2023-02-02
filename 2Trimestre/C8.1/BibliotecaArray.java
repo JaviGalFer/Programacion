@@ -1,5 +1,3 @@
-// hola
-
 import java.util.Scanner;
 /** 
  * @author Francisco Javier Gallego Fernández
