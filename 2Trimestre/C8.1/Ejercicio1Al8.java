@@ -3,7 +3,7 @@ import java.util.Scanner;
 * 
 * @author Fco Javier Gallego Fernández
 */
-public class Ejercicio22 {
+public class Ejercicio1Al8 {
 /** /////////////BIBLIOTECA DE FUNCIONES///////////////*/
   public static int funVoltea(int x) {
 /** Voltea el número entero.

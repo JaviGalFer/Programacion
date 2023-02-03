@@ -89,7 +89,7 @@ public class BibliotecaArray {
      * Devuelve la media del array que entra por la variable array
      * 
      * @param array El array introducido en la variable
-     * @return (double)suma / array.length -> Devuelve el número más pequeño del array
+     * @return (double)suma / array.length -> Devuelve la media del array
      */
     int suma = 0;
     int i;
@@ -101,6 +101,24 @@ public class BibliotecaArray {
     return (double)suma / array.length;     //Devuelve de manera double la variable suma
   }                                        //Dividiendolo entre la longitud del array
   
+  ///////FUNCIÓN SUMA ARRAY///////
+  public static double sumaArrayInt(int[] array) {
+    /**
+     * Devuelve la media del array que entra por la variable array
+     * 
+     * @param array El array introducido en la variable
+     * @return (double)suma -> Devuelve la suma total del array
+     */
+    int suma = 0;
+    int i;
+    
+    for (i = 0; i < array.length; i++) {    //Recorre la variable haciendo la suma de cada uno
+      suma += array[i];                     //Guardandose en la variable suma
+    }
+    
+    return (double)suma;     //Devuelve de manera double la variable suma
+  }      
+
   ////////FUNCIÓN ESTÁ EN ARRAY////////
   public static boolean estaEnArrayInt(int[] array, int numero) {
     /**
