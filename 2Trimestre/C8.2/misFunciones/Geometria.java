@@ -19,7 +19,6 @@ public class Geometria {
         System.out.print ("Elija una opción (1 al 5): ");
         opcion =s.nextInt();
         return opcion;
-        
     }
 //////////FUNCION PEDIR RADIO////////
     /**
