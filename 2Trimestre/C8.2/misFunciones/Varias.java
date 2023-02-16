@@ -261,13 +261,31 @@ public class Varias {
     }
     return decimal;
   }
-
+////////////FUNCIÓN DecimalABinario/////////
+/**
+ * Esta función pasa un número decimal a binario
+ * @param decimal   -> Número decimal introducido
+ * @return          -> Mediante la función toBinaryString devuelve el número decimal en binario
+ */
   public static String decimalABinario (int decimal) {
     if (decimal == 0){
       return "0";
     }
     return Integer.toBinaryString(decimal);
   }
+/////////FUNCIÓN convertirBaseNumerica/////////
+/**
+ * Esta función es un convertidor de bases
+ * @param numero            -> Número introducido
+ * @param baseOrigen        -> Base del número introducido
+ * @param baseDestino       -> Base de destino del número introducido
+ * @return Integer.toString -> Mediante la función Integer convierte el número en la base de destino
+ */
+  public static String convertirBaseNumerica(String numero, int baseOrigen, int baseDestino) {
+    int decimal = Integer.parseInt(numero, baseOrigen);
+    return Integer.toString(decimal, baseDestino);
+}
+
 
 }
 
