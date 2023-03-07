@@ -13,6 +13,7 @@ public class DecimalABinario {
 
         String binario = Varias.decimalABinario(decimal);
         System.out.println ("El número decimal introducido en binario es: " + binario);
+        
     s.close();
     }
 }
