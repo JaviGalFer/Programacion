@@ -1,9 +1,9 @@
 /**
-* CLase Lagarto extendida de la clase Animal
+* Clase Lagarto extendida de la clase Animal
 * @author Fco Javier Gallego Fernández
 */
 public class Lagarto extends Animal {
-    //Creamos la clase con sus atributos
+    //Creamos el objeto con sus atributos
     public Lagarto(String nombre, int edad, Sexo sexo){
         super(nombre, edad, sexo);                          //Utilizamos super para decir que es heredado
     }
@@ -30,7 +30,7 @@ public class Lagarto extends Animal {
         System.out.println(getSexo());
     }
 
-    //@Override para modificar funciones heredadas
+    //@Override para modificar métodos heredados
     @Override
     public void come(String comida) {
         if (comida.equals("insecto")) {

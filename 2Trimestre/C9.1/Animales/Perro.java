@@ -5,7 +5,7 @@
 public class Perro extends Mamifero {
     //Creamos el atributo raza dedicado a la clase Perro
     private String raza;
-    //Creamos la clase perro con sus atributos
+    //Creamos el objeto perro con sus atributos
     public Perro(String nombre, int edad, Sexo sexo, String raza){
         super(nombre, edad, sexo);      //Super para los atributos heredados
         this.raza = raza;               //Le decimos la variable
@@ -23,7 +23,7 @@ public class Perro extends Mamifero {
         return super.getNombre();
     }
 
-    //Aplicamos diferentes funciones 
+    //Aplicamos diferentes métodos
     public void ladra(){
         System.out.println("guuau guauu");
     }
@@ -40,7 +40,7 @@ public class Perro extends Mamifero {
         System.out.println(this.getNombre() + " dice: miraa cómo muevo la colaa de lo feli que toy ompae");
     }
 
-    //@Override para modificar funciones heredadas
+    //@Override para modificar métodos heredados
     @Override
     public void come(String comida) {
         if (comida.equals("Pienso")) {

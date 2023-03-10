@@ -11,7 +11,7 @@ public class PruebaAnimales {
         Pepe.come("Palomitas");
         Pepe.programa();
         
-        //Creamos a la clase perro y llamamos a las diferentes funciones
+        //Creamos al objeto perro y llamamos a las diferentes funciones
         System.out.println("Vamos a adoptar a un Perro!!");
         Perro Laika = new Perro("Laika", 5, Sexo.HEMBRA, "Golden Retriever");
         System.out.println("Nombre: " + Laika.getNombre());

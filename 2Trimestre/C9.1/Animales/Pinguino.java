@@ -13,7 +13,7 @@ public class Pinguino extends Ave {
     public Pinguino(Sexo s){
         super(s);
     }
-    //Creamos las diferentes funciones
+    //Creamos los diferentes métodos
     public void vuela(){
         System.out.println("Qué te cree que soy illo?");
     }
@@ -26,7 +26,7 @@ public class Pinguino extends Ave {
         System.out.println("Po no hago nada");
     }
 
-    //Modificamos con el @Override las funciones heredadas
+    //Modificamos con el @Override los métodos heredados
     @Override
     public void emitirSonido(){
         System.out.println("*Sonido de Pinguino*");

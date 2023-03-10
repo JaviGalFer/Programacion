@@ -1,30 +1,29 @@
 /**
-* Clase Coche extendida de Vehículo
+* Clase Pizza con los diferentes métodos y atributos de la instancia
 * @author Fco Javier Gallego Fernández
 */
 public class Pizza {
     
-    private static int totalPizzas = 0;
+    private static int totalPizzas = 0;         //Atributos de clase
     private static int totalServidos = 0;
     
     private String tam;
-    private String tipo;
+    private String tipo;                       //Atributos de Instancia
     private String estado;
     
-    public Pizza(String tipo, String tam) {
-        this.tipo = tipo;
+    public Pizza(String tipo, String tam) {   //Creamos el método constructor
+        this.tipo = tipo;                       
         this.tam = tam;
         this.estado = "pedida";
         Pizza.totalPizzas++;
     }
-    
     public String toString() {
         return "pizza " + this.tipo + " " + this.tam + ", " + this.estado;
     }
     
     public static int getTotalPizzas() {
         return Pizza.totalPizzas;
-    }
+    }                                       //Establecemos los getters
     
     public static int getTotalServidos() {
         return Pizza.totalServidos;

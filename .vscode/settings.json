@@ -1,8 +1,11 @@
 {
     "java.project.sourcePaths": [
         "2Trimestre/C9.1/Vehiculos",
+        "2Trimestre/C9.1/Terminal",
+        "2Trimestre/C9.1/Pizza",
+        "2Trimestre/C9.1/Expocoches",
         "2Trimestre/C9.1/Animales",
         "2Trimestre/C9-Ejemplo",
-        "2Trimestre/C9.1/Pizza"
+        "2Trimestre/C9.1/CorteIslandes"
     ]
 }

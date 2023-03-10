@@ -3,11 +3,11 @@
 * @author Fco Javier Gallego Fernández
 */
 public class Mamifero extends Animal {
-    //Creamos la clase Animal con los atributos heredados
+    //Creamos la instancia Animal con los atributos heredados
     public Mamifero(String nombre, int edad, Sexo sexo){
         super(nombre, edad, sexo);
     }
-    //Aplicamos diferentes funciones para la clase mamífero
+    //Aplicamos diferentes métodos para la clase mamífero
     public void amamanta(){
         if (this.getSexo() == Sexo.MACHO){
             System.out.println ("Soy macho, no puedo amamantar");
@@ -19,7 +19,7 @@ public class Mamifero extends Animal {
     public void cuidaCrias(){
         System.out.println("Estoy cuidando de mis crias, deame tranqui");
     }
-    //Modificamos con el @Override las funciones heredadas para la clase Mamífero
+    //Modificamos con el @Override los métodos heredados para la instancia Mamífero
     @Override
     public void mover(){
         System.out.println("Mira cómo corro ompaeeee");

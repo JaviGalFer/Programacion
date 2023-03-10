@@ -16,7 +16,7 @@ public class Ave extends Animal {
     public Ave(Sexo s){
         super(s);
     }
-    //Creamos funciones por defecto para la Clase Ave que se van a heredar
+    //Creamos métodos por defecto para la instancia Ave que se van a heredar
     public void ponHuevo() {
         if (this.getSexo() == Sexo.MACHO) {
             System.out.println ("Que soy un macho empanao");
@@ -33,7 +33,7 @@ public class Ave extends Animal {
         System.out.println ("Mira como vuelo uuuuuuuuuuuaaa");
     }
 
-    @Override                   //Utilizamos @override para decirle que es una función heredada
+    @Override                   //Utilizamos @override para decirle que es una métodos heredada
     public void mover(){
         System.out.println("Mira cómo vueeelooo");
     }

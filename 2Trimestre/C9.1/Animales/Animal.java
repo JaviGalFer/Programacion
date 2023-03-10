@@ -3,7 +3,7 @@
 * @author Fco Javier Gallego Fernández
 */
 public abstract class Animal {
-    private Sexo sexo;          //Creamos los atributos
+    private Sexo sexo;          //Creamos los atributos de instancia
     private String nombre;
     private int edad;
 
@@ -41,7 +41,7 @@ public abstract class Animal {
     public Sexo getSexo(){
         return this.sexo;
     }
-    //Creamos diferentes funciones que se van a heredar
+    //Creamos diferentes métodos que se van a heredar
     public void duerme(){
         System.out.println("ZZzzz");
     }

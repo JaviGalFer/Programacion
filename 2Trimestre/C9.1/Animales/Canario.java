@@ -14,7 +14,7 @@ public class Canario extends Ave {
         super(s);
     }
 
-    //Creamos las diferentes funciones para la clase
+    //Creamos los diferentes métodos para la clase
     public void canta(){
         System.out.println ("Mio Mio Mio Mio Mio");
     }
@@ -27,7 +27,7 @@ public class Canario extends Ave {
         System.out.println ("Estoy pio pio pio");
     }
 
-    @Override                           //Utilizamos @override para decir que es una función heredada
+    @Override                           //Utilizamos @override para decir que es un método heredada
     public void emitirSonido(){
         System.out.println("Miraa como te canto pio pio pio");
     }
