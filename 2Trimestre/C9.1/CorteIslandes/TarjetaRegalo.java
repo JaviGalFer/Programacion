@@ -18,7 +18,7 @@ public class TarjetaRegalo {
 
     public void gasta(double cantidad) {                       //Método de saldo
         if (saldo < cantidad) {
-            System.out.println("No tiene suficiente saldo para gastar " + cantidad + "€");
+            System.out.println("No tiene suficiente saldo para gastar " + cantidad + " Euros");
         } else {
             saldo -= cantidad;
         }
@@ -42,6 +42,6 @@ public class TarjetaRegalo {
     @Override
     public String toString() {                                                      //toString para las llamadas a la instancia
         DecimalFormat dosDecimales = new DecimalFormat("0.00");             //En los prints
-        return "Tarjeta nº " + numero + " - Saldo " + dosDecimales.format(saldo) + "€";
+        return "Tarjeta nº " + numero + " - Saldo " + dosDecimales.format(saldo) + " Euros";
     }
 }
