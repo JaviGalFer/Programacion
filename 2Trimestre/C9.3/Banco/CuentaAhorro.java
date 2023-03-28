@@ -2,27 +2,30 @@
  * @author Fco Javier Gallego Fernández
  */
 public class CuentaAhorro extends CuentaBancaria {
-    private static final double SALDO_MINIMO = 1000;
-    private static final double INTERES_BASICO = 0.01;
-    private static final double INTERES_ADICIONAL = 0.02;
+    //Atributoss
+    private static final double saldoMinimo = 1000;
+    private static final double interesBasico = 0.01;
+    private static final double interesAdicional = 0.02;
     
     public CuentaAhorro(String iban, double saldo) {
         super(iban, saldo);
     }
 
+    //Método heredado calcularIntereses de la cuenta de ahorros
     @Override
-    public double calcularIntereses() {
+    public void calcularIntereses() {
         double intereses;
-        if (getSaldo() >= SALDO_MINIMO) {
-            intereses = getSaldo() * INTERES_ADICIONAL;
+        if (getSaldo() >= saldoMinimo) {
+            intereses = getSaldo() * interesAdicional;
         } else {
-            intereses = getSaldo() * INTERES_BASICO / 2;
+            intereses = getSaldo() * interesBasico / 2;
         }
         añadir(intereses);
-        return intereses;
+        System.out.println("\nLos intereses son "+intereses+" euros.");
     }
 
-    private void añadir(double cantidad) {
+    //Método añadir cantidad cantidad a la cuenta
+    public void añadir(double cantidad) {
         super.añadir(cantidad);
     }
 }

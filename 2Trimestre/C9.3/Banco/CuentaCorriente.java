@@ -2,21 +2,25 @@
  * @author Fco Javier Gallego Fernández
  */
 public class CuentaCorriente extends CuentaBancaria {
-    private static final double INTERES_ADICIONAL = 0.01;
+    //Atributos
+    private static final double interesAdicional = 0.01;
 
     public CuentaCorriente(String iban, double saldo) {
         super(iban, saldo);
     }
 
-    @Override
-    public double calcularIntereses() {
-        double intereses = getSaldo() * interesAnualBasico;
-        añadir(intereses);
-        return intereses;
+    //Método calcularIntereses de la cuenta corriente
+    public void calcularIntereses(){
+        double intereses=getSaldo()*getInteresAnualBasico();
+        añadir(intereses);    
+
+        System.out.println("\nLos intereses son "+intereses+" euros.");
     }
 
-    private void añadir(double cantidad) {
+    //Método heredado añadir cantidad a la cuenta
+    @Override
+    public void añadir(double cantidad) {
         super.añadir(cantidad);
-        super.añadir(cantidad * INTERES_ADICIONAL);
+        super.añadir(cantidad * interesAdicional);
     }
 }
