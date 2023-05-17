@@ -1,0 +1,89 @@
+/* Estilos generales */
+body {
+    background-image: url('fondo.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: Arial, sans-serif;
+    color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+}
+
+.contenedor {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.titulo {
+    text-align: center;
+}
+
+.jugadas {
+    margin-top: 40px;
+}
+
+.jugada {
+    display: flex;
+    align-items: column;
+    margin-bottom: 10px;
+    justify-content: space-around;
+}
+
+.jugador1 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; /* Alinea el contenido del jugador a la izquierda */
+    flex-basis: 30%; /* Establece el ancho de la columna del jugador */
+    flex: 1;
+    font-weight: bold;
+}
+
+.resultado {
+    font-size: 24px;
+    font-weight: bold;
+    flex-basis: 40%; /* Establece el ancho de la columna del resultado */
+    text-align: center;
+    
+}
+
+.jugador2 {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end; /* Alinea el contenido del jugador a la izquierda */
+    flex-basis: 30%; /* Establece el ancho de la columna del jugador */
+    flex: 1;
+    font-weight: bold;
+}
+
+.imagen {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.jugada p {
+    margin: 0;
+}
+
+.separador {
+    border: none;
+    border-top: 2px solid #FFFFFF;
+    margin: 20px 0;
+}
+
+.puntos {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.ganador {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.celebracion {
+    display: block;
+    margin: 0 auto;
+    max-width: 300px;
+}

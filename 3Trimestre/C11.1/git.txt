@@ -1,0 +1,5 @@
+git status - Saber que hay para actualizar
+git add . - añadir repositorio
+git commit - m "comentario"
+git push
+git pull --Para saber si está todo actualizado / Actualizar tu espacio de trabajo

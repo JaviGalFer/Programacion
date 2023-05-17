@@ -1,0 +1,56 @@
+.accionpersonaje {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    }
+
+.accionpersonaje img {
+    margin-bottom: 10px;
+    }
+
+.arrow_box {
+    display: flex;
+    justify-content: center;
+    align-items: center
+    
+    background: #FFF;
+    border: 1px solid #CCC;
+    border-radius: 5px;
+    padding: 10px;
+    min-width: 150px;
+    max-width: 300px;
+ 
+}
+
+.arrow_box:after, .arrow_box:before {
+    bottom: 100%;
+    left: 50%;
+    border: solid transparent;
+    content: " ";
+    height: 0;
+    width: 0;
+    position: absolute;
+    pointer-events: none;
+}
+
+.arrow_box:after {
+    border-color: rgba(255, 255, 255, 0);
+    border-bottom-color: #FFF;
+    border-width: 10px;
+    margin-left: -10px;
+}
+
+.arrow_box:before {
+    border-color: rgba(204, 204, 204, 0);
+    border-bottom-color: #CCC;
+    border-width: 11px;
+    margin-left: -11px;
+}
+
+
+.arrow_box div {
+display: inline-block;
+vertical-align: middle;
+}
